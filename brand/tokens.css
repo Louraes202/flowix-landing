@@ -1,0 +1,20 @@
+/* Flowix brand tokens.
+   Official fills come from the logo SVGs. Derived values are marked. */
+
+:root {
+  --fx-ink: #01010d;
+  --fx-blue: #1a6eff;
+  --fx-white: #ffffff;
+
+  /* Derived surfaces. Not in the logo file. */
+  --fx-surface: #07091a;
+  --fx-line: rgba(26, 110, 255, 0.72);
+  --fx-text: var(--fx-white);
+  --fx-text-muted: rgba(255, 255, 255, 0.72);
+  --fx-text-on-light: var(--fx-ink);
+
+  --fx-font: "Outfit", "Avenir Next", "Segoe UI", sans-serif;
+  --fx-radius-node: 2px;
+  --fx-radius-control: 8px;
+  --fx-space: 8px;
+}

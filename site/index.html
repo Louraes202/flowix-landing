@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flowix — Parceiros de Automação & IA</title>
+  <meta name="description" content="Substituímos os teus processos manuais por sistemas de IA que operam 24/7. Soluções a funcionar em menos de 4 semanas." />
+  <meta name="theme-color" content="#01010d" />
+  <meta property="og:title" content="Flowix — Parceiros de Automação & IA" />
+  <meta property="og:description" content="Escala o teu negócio sem escalar o teu horário de trabalho." />
+  <meta property="og:locale" content="pt_PT" />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=5" />
+</head>
+<body>
+  <a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="#inicio" aria-label="Flowix — início">
+        <img src="assets/logo-full-light.svg" alt="Flowix" width="92" height="30" />
+      </a>
+      <nav class="nav__links" aria-label="Secções">
+        <a href="#solucoes">Soluções</a>
+        <a href="#impacto">Impacto</a>
+        <a href="#metodo">Método</a>
+        <a href="#vantagens">Vantagens</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn--primary btn--sm nav__cta" href="#contacto">Fala connosco</a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span><span></span></button>
+    </div>
+    <div class="nav__menu" id="menu" hidden>
+      <a href="#solucoes">Soluções</a>
+      <a href="#impacto">Impacto</a>
+      <a href="#metodo">Método</a>
+      <a href="#vantagens">Vantagens</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn--primary" href="#contacto">Fala connosco</a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <canvas class="hero__flow" id="flow" aria-hidden="true"></canvas>
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <h1 class="hero__title reveal">
+            Escala o teu negócio sem escalar o teu <span class="u-flow">horário</span> de trabalho.
+          </h1>
+          <p class="hero__lede reveal">Substituímos os teus processos manuais por sistemas de IA que operam 24/7.</p>
+          <div class="hero__ctas reveal">
+            <a class="btn btn--primary" href="#contacto">Entra em contacto</a>
+            <a class="btn btn--ghost" href="#solucoes">Ver soluções</a>
+          </div>
+        </div>
+
+        <!-- Live flow: steps joined like the mark -->
+        <figure class="flowcard reveal" aria-label="Exemplo de um fluxo automático">
+          <figcaption class="flowcard__top">
+            <span class="idx" id="flowName">Fluxo — Atendimento</span>
+            <span class="idx idx--dim" id="flowIdx">01 / 03</span>
+          </figcaption>
+          <ol class="flowcard__steps" id="flowSteps"></ol>
+          <div class="flowcard__foot">
+            <span>Tratados hoje <strong id="flowCount">128</strong></span>
+            <span id="flowTime">tempo médio 2,4 s</span>
+          </div>
+        </figure>
+      </div>
+
+      <div class="wrap partners reveal">
+        <p class="idx idx--dim">Parceiros oficiais</p>
+        <ul>
+          <li><img src="assets/partners/airv.png" alt="AIRV — Associação Empresarial da Região de Viseu" height="30" /></li>
+          <li><img src="assets/partners/ipv.png" alt="Politécnico de Viseu" height="30" /></li>
+          <li><img src="assets/partners/star.png" alt="STAR Institute — Science and Technology Applied Research Institute" height="22" /></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="about" id="sobre" aria-label="Sobre nós">
+      <div class="wrap">
+        <p class="about__text" id="aboutText">Somos a Flowix. Ajudamos a automatizar tarefas rotineiras e a escalar operações através de IA.</p>
+      </div>
+    </section>
+
+    <!-- SOLUÇÕES -->
+    <section class="section" id="solucoes">
+      <div class="wrap">
+        <header class="sh reveal">
+          <span class="idx">01 / Soluções</span>
+          <div>
+            <h2>Sistemas que trabalham por ti</h2>
+            <p>Exemplos do que fazemos: automação personalizada para te ajudar no que importa.</p>
+          </div>
+        </header>
+
+        <div class="bento">
+          <article class="card card--chat reveal">
+            <div class="demo demo--chat" aria-hidden="true">
+              <div class="demo__head"><span class="idx">Assistente · WhatsApp</span><span class="idx idx--dim">24/7</span></div>
+              <div class="bubble bubble--in">Bom dia, estão abertos ao sábado?</div>
+              <div class="bubble bubble--out">Bom dia! Ao sábado estamos abertos das 9:00 às 13:00.</div>
+              <div class="bubble bubble--in">Então queria marcar uma consulta para quinta.</div>
+              <div class="bubble bubble--out">Claro. Tenho quinta às 10:30 ou às 15:00. Qual prefere?</div>
+              <div class="bubble bubble--in">10:30, obrigado.</div>
+              <div class="bubble bubble--out">Marcado. Enviei a confirmação por email.</div>
+              <div class="demo__input"><span>Escreve uma mensagem…</span></div>
+            </div>
+            <h3>Atendimento Inteligente 24/7</h3>
+            <p>Respostas instantâneas 24/7 sem intervenção humana. Garante suporte imediato aos teus clientes e liberta o tempo da tua equipa.</p>
+          </article>
+
+          <article class="card card--crm reveal">
+            <div class="demo demo--crm">
+              <ul class="rows">
+                <li><span><strong>José da Silva</strong><small>Último contacto a 23/10/2025</small></span><em>Potencial</em></li>
+                <li><span><strong>Rúben Pereira</strong><small>Último contacto a 26/11/2025</small></span><em>Já foi cliente</em></li>
+              </ul>
+              <button class="btn btn--primary btn--sm" id="crmBtn" type="button">Iniciar fluxo</button>
+            </div>
+            <h3>Ativação de Clientes</h3>
+            <p>Converte interesse em clientes de forma automática. Sistemas que ativam novos utilizadores 24/7 para que nenhuma venda se perca.</p>
+          </article>
+
+          <article class="card card--inv reveal">
+            <div class="demo demo--inv">
+              <div class="demo__bar">
+                <span>Relatório de faturas</span>
+                <button class="btn btn--ghost btn--xs" id="invBtn" type="button">Gerar</button>
+              </div>
+              <ul class="rows inv" id="invList">
+                <li><span>FT 2026/184</span><span class="inv__bar"><i></i></span><b>1 240,00 €</b></li>
+                <li><span>FT 2026/185</span><span class="inv__bar"><i></i></span><b>386,50 €</b></li>
+                <li><span>FT 2026/186</span><span class="inv__bar"><i></i></span><b>2 015,20 €</b></li>
+              </ul>
+            </div>
+            <h3>Automação de Faturas</h3>
+            <p>Leitura e extração de dados automática. Eliminamos o erro manual na contabilidade para reduzir custos fixos e acelerar o teu fecho mensal.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPACTO -->
+    <section class="section section--tight" id="impacto">
+      <div class="wrap">
+        <header class="sh reveal">
+          <span class="idx">02 / Impacto</span>
+          <div>
+            <h2>Impacto real no teu negócio</h2>
+            <p>Métricas projetadas para quem não tem tempo a perder.</p>
+          </div>
+        </header>
+        <div class="stats">
+          <div class="stat reveal">
+            <span class="idx idx--dim">Redução de custos</span>
+            <strong class="stat__num"><span class="count" data-to="30" data-prefix="~">~0</span>%</strong>
+            <p>Redução média estimada em despesas operacionais através da automação de processos manuais.</p>
+          </div>
+          <div class="stat reveal">
+            <span class="idx idx--dim">Operação autónoma</span>
+            <strong class="stat__num"><span class="count" data-to="24">0</span>/7</strong>
+            <p>Execução contínua de tarefas críticas sem necessidade de intervenção humana nem risco de erro manual.</p>
+          </div>
+          <div class="stat reveal">
+            <span class="idx idx--dim">Tempo de espera</span>
+            <strong class="stat__num">&lt;<span class="count" data-to="4">0</span><small>semanas</small></strong>
+            <p>Desenvolvimento e implementação de uma solução funcional, totalmente personalizada, em menos de um mês.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MÉTODO -->
+    <section class="section" id="metodo">
+      <div class="wrap">
+        <header class="sh reveal">
+          <span class="idx">03 / Método</span>
+          <div>
+            <h2>O caminho para a tua autonomia</h2>
+          </div>
+        </header>
+        <ol class="steps" id="steps">
+          <li class="step reveal">
+            <span class="step__node" aria-hidden="true"></span>
+            <span class="idx idx--dim">Passo 1</span>
+            <h3>Diagnóstico &amp; Estratégia</h3>
+            <p>Analisamos a fundo as tuas necessidades para identificar as maiores oportunidades de automação e lucro.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__node" aria-hidden="true"></span>
+            <span class="idx idx--dim">Passo 2</span>
+            <h3>Desenvolvimento &amp; Teste</h3>
+            <p>Construímos sistemas de IA robustos, testados rigorosamente para garantir máxima fiabilidade e segurança.</p>
+            <p class="step__criteria">Segurança · Eficiência · Velocidade · Precisão</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__node" aria-hidden="true"></span>
+            <span class="idx idx--dim">Passo 3</span>
+            <h3>Lançamento &amp; Evolução</h3>
+            <p>Implementamos a solução no teu fluxo de trabalho e garantimos que o sistema evolui com o teu negócio.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- VANTAGENS -->
+    <section class="section" id="vantagens">
+      <div class="wrap">
+        <header class="sh reveal">
+          <span class="idx">04 / Vantagens</span>
+          <div>
+            <h2>Eficiência e impacto à escala</h2>
+          </div>
+        </header>
+        <ul class="perks">
+          <li class="perk reveal">
+            <h3>Menos custos</h3>
+            <p>Cortamos o desperdício operacional. Automatizamos processos manuais para reduzir as tuas despesas fixas e proteger a tua margem.</p>
+          </li>
+          <li class="perk reveal">
+            <h3>Resultados garantidos</h3>
+            <p>Transformamos dados em resultados. Sistemas de IA que eliminam erros e garantem uma performance comercial de elite.</p>
+          </li>
+          <li class="perk reveal">
+            <h3>Maior rendimento</h3>
+            <p>Faz mais com menos recursos. Libertamos a tua equipa das tarefas repetitivas para que o negócio cresça em tempo recorde.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="wrap">
+        <header class="sh reveal">
+          <span class="idx">05 / FAQ</span>
+          <div>
+            <h2>Perguntas frequentes</h2>
+          </div>
+        </header>
+        <div class="faq reveal">
+          <details>
+            <summary>Quanto tempo demora a implementação?</summary>
+            <p>Menos de 4 semanas desde o diagnóstico até teres uma solução funcional, totalmente personalizada, a correr no teu negócio.</p>
+          </details>
+          <details>
+            <summary>Que processos podem ser automatizados?</summary>
+            <p>Tarefas rotineiras e repetitivas: atendimento a clientes, ativação de novos clientes, leitura e lançamento de faturas, entre outras. O diagnóstico inicial mostra onde está o maior retorno.</p>
+          </details>
+          <details>
+            <summary>O sistema precisa de alguém a acompanhar?</summary>
+            <p>Não no dia a dia. Os sistemas operam 24/7 sem intervenção humana nas tarefas automatizadas. Depois do lançamento continuamos contigo para que o sistema evolua com o negócio.</p>
+          </details>
+          <details>
+            <summary>Como começamos?</summary>
+            <p>Fala connosco pelo formulário abaixo ou por <a href="mailto:geral@flowix.pt">geral@flowix.pt</a>. O primeiro passo é o diagnóstico.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section section--wide contact" id="contacto">
+      <div class="wrap">
+        <header class="sh reveal">
+          <span class="idx">06 / Contacto</span>
+          <div>
+            <h2>Não deixes as perguntas para depois</h2>
+            <p>Estamos prontos para acelerar o teu negócio. Fala connosco hoje.</p>
+            <a class="contact__mail" href="mailto:geral@flowix.pt">geral@flowix.pt</a>
+          </div>
+        </header>
+        <form class="form reveal" id="contactForm" novalidate>
+          <label><span class="idx idx--dim">Nome</span><input name="nome" autocomplete="name" placeholder="José da Silva" required /></label>
+          <label><span class="idx idx--dim">Email</span><input name="email" type="email" autocomplete="email" placeholder="jose@empresa.pt" required /></label>
+          <label class="form__full"><span class="idx idx--dim">Mensagem</span><textarea name="mensagem" rows="3" placeholder="Olá, queria automatizar…" required></textarea></label>
+          <div class="form__full form__send">
+            <p class="form__note" id="formNote" role="status"></p>
+            <button class="btn btn--primary" type="submit">Enviar mensagem</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div>
+        <img class="footer__logo" src="assets/logo-full-light.svg" alt="Flowix" width="200" height="66" />
+        <p class="footer__tag">Automatizamos o presente. <span class="u-flow">Libertamos o futuro.</span></p>
+      </div>
+      <nav class="footer__nav" aria-label="Rodapé">
+        <p class="idx idx--dim">Secções</p>
+        <a href="#solucoes">Soluções</a>
+        <a href="#impacto">Impacto</a>
+        <a href="#metodo">Método</a>
+        <a href="#vantagens">Vantagens</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="footer__nav">
+        <p class="idx idx--dim">Segue-nos</p>
+        <a href="https://www.linkedin.com/company/flowixpt" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/flowix.solutions/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61585345720739" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="wrap footer__base">
+      <span>© 2026 Flowix Solutions, Lda.</span>
+      <a href="mailto:geral@flowix.pt">geral@flowix.pt</a>
+    </div>
+  </footer>
+
+  <script src="main.js?v=5" defer></script>
+</body>
+</html>
